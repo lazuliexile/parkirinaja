@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "923781232201",
+    "project_id": "parkir-aja-47be8",
+    "storage_bucket": "parkir-aja-47be8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923781232201:android:09bcef991f9ff301a4f198",
+        "android_client_info": {
+          "package_name": "com.example.parkiraja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923781232201-bcmqle039keqraco2h7jf6qj4rlcl3qo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.parkiraja",
+            "certificate_hash": "f84a26bf768ab55d4ff228ee0a2bf1b8a83dd5ee"
+          }
+        },
+        {
+          "client_id": "923781232201-uhhl779ga3j21vn2hf4lp0m8hssvhjq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClvwirGVS8aifb6GNMGXRrURiP9mqelV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923781232201-uhhl779ga3j21vn2hf4lp0m8hssvhjq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
