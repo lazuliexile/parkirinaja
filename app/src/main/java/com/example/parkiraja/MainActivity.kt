@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.example.parkiraja.adapter.ViewPageAdapter
 import com.example.parkiraja.databinding.ActivityMainBinding
 import com.example.parkiraja.fragment.HomeFragment
+import com.example.parkiraja.fragment.ScanFragment
 import com.example.parkiraja.fragment.UserFragment
 
 class MainActivity : AppCompatActivity() {
@@ -22,12 +23,15 @@ class MainActivity : AppCompatActivity() {
     private fun setupTab() {
         val adapter = ViewPageAdapter(supportFragmentManager)
         adapter.addFragment(HomeFragment(), "Home")
+        adapter.addFragment(ScanFragment(), "Camera")
         adapter.addFragment(UserFragment(), "User")
 
         binding.viewPager.adapter = adapter
         binding.tabs.setupWithViewPager(binding.viewPager)
 
         binding.tabs.getTabAt(0)!!.setIcon(R.drawable.home)
-        binding.tabs.getTabAt(1)!!.setIcon(R.drawable.person)
+        binding.tabs.getTabAt(1)!!.setIcon(R.drawable.ic_baseline_camera_alt_24)
+        binding.tabs.getTabAt(2)!!.setIcon(R.drawable.person)
+
     }
 }
