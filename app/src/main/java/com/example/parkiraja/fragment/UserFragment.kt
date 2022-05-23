@@ -39,8 +39,8 @@ class UserFragment : Fragment() {
         val user = auth.currentUser
 
         if (user != null){
-            binding.edtName.setText(user.displayName)
-            binding.edtEmail.setText(user.email)
+//            binding.edtName.setText(user.displayName)
+            binding.displayName.setText(user.email)
         }
 
         binding.btnLogout.setOnClickListener(){
