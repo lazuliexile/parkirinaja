@@ -10,10 +10,13 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/informasi_saldo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -69,9 +72,9 @@
         android:layout_margin="20dp"
         android:backgroundTint="@color/black"
         app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/mobil"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header">
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -154,16 +157,12 @@
         android:id="@+id/mobil"
         android:layout_width="147dp"
         android:layout_height="176dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/black"
         app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/motor"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/informasi_saldo"
-        app:layout_constraintVertical_bias="0.028">
+        app:layout_constraintBottom_toTopOf="@+id/keterangan"
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -228,16 +227,17 @@
         android:id="@+id/motor"
         android:layout_width="147dp"
         android:layout_height="176dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="310dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/black"
         app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/keterangan"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/mobil"
-        app:layout_constraintTop_toBottomOf="@+id/informasi_saldo"
-        app:layout_constraintVertical_bias="0.51">
+        app:layout_constraintTop_toBottomOf="@+id/informasi_saldo">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -305,9 +305,9 @@
         android:layout_margin="40dp"
         android:backgroundTint="@color/black"
         app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Check_In"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mobil">
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -331,24 +331,25 @@
                 android:text="1. Tarif permalam dikenakan biaya RP 50.000"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.183"
+                app:layout_constraintHorizontal_bias="0.241"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_keterangan"
-                app:layout_constraintVertical_bias="0.228" />
+                app:layout_constraintTop_toBottomOf="@+id/text_keterangan" />
 
             <TextView
                 android:id="@+id/text_keterangan_2"
                 android:layout_width="311dp"
                 android:layout_height="49dp"
+                android:layout_marginStart="21dp"
                 android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:text="2. Tarif permalam akan berlaku jika pelanggan parkir atau pengunjung memarkirkan kendaraan mereka setiap jam 24.00 dan keluar lebih dari pukul 12.00"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/aturan"
                 app:layout_constraintVertical_bias="0.0" />
@@ -361,11 +362,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:backgroundTint="#FFFF00"
-        android:textColor="@color/black"
         android:text="Check In"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Check_Out"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/keterangan" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Check_Out"
@@ -373,13 +374,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/black"
-        android:text="Check In"
+        android:text="Check Out"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Check_In" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
