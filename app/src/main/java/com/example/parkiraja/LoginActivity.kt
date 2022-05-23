@@ -64,6 +64,7 @@ class LoginActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(this, "Email atau kata sandi salah", Toast.LENGTH_SHORT).show()
                 }
+                finish()
             }
     }
 }
