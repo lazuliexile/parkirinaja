@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.parkiraja.adapter.ViewPageAdapter
 import com.example.parkiraja.databinding.ActivityMainBinding
+import com.example.parkiraja.fragment.FaqFragment
 import com.example.parkiraja.fragment.HomeFragment
 import com.example.parkiraja.fragment.ScanFragment
 import com.example.parkiraja.fragment.UserFragment
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = ViewPageAdapter(supportFragmentManager)
         adapter.addFragment(HomeFragment(), "Home")
         adapter.addFragment(ScanFragment(), "Camera")
+        adapter.addFragment(FaqFragment(), "FAQ")
         adapter.addFragment(UserFragment(), "User")
 
         binding.viewPager.adapter = adapter
@@ -31,7 +33,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.tabs.getTabAt(0)!!.setIcon(R.drawable.home)
         binding.tabs.getTabAt(1)!!.setIcon(R.drawable.ic_baseline_camera_alt_24)
-        binding.tabs.getTabAt(2)!!.setIcon(R.drawable.person)
+        binding.tabs.getTabAt(2)!!.setIcon(R.drawable.ic_baseline_help_24)
+        binding.tabs.getTabAt(3)!!.setIcon(R.drawable.person)
 
     }
 }
