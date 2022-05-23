@@ -19,7 +19,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ParkirAja"
         tools:targetApi="31">
+<<<<<<< HEAD
 
+=======
+        <activity
+            android:name=".editProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CameraActivity"
+            android:exported="false" />
+>>>>>>> dfe3a6db9c8bf3b6add8dba16e23ca5d93dbc108
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
