@@ -19,28 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ParkirAja"
         tools:targetApi="31">
-<<<<<<< HEAD
 
-=======
-        <activity
-            android:name=".editProfilActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SplashScreen"
-            android:exported="true">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-
-        <activity
-            android:name=".CameraActivity"
-            android:exported="false" />
->>>>>>> dfe3a6db9c8bf3b6add8dba16e23ca5d93dbc108
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -57,11 +36,27 @@
             android:value="YOUR_API_KEY" />
 
         <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".editProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".CameraActivity"
             android:exported="false" />
         <activity
             android:name=".LandingActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />

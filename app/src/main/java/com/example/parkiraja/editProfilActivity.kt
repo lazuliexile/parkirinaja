@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.parkiraja.databinding.ActivityEditProfilBinding
 import com.example.parkiraja.databinding.ActivityLandingBinding
+import com.example.parkiraja.databinding.ActivityMainBinding
 import com.example.parkiraja.databinding.FragmentUserBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -21,9 +22,8 @@ class editProfilActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         binding.selesai.setOnClickListener{
-            finish()
-//            val intent = Intent(this, userFra::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
 
         }
     }
