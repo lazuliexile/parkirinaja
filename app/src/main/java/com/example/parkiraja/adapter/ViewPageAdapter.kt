@@ -4,12 +4,14 @@ import android.icu.text.CaseMap
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.example.parkiraja.MainActivity
 
 class ViewPageAdapter(supportFragmentManager: FragmentManager) :
     FragmentPagerAdapter(supportFragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
     private val FragmentList = ArrayList<Fragment>()
     private val FragmentTitleList = ArrayList<String>()
+
 
     override fun getCount(): Int {
         return FragmentList.size

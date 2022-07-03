@@ -1,6 +1,7 @@
 package com.example.parkiraja
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.parkiraja.databinding.ActivityEditProfilBinding
@@ -15,6 +16,7 @@ class editProfilActivity : AppCompatActivity() {
     lateinit var auth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         binding = ActivityEditProfilBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)

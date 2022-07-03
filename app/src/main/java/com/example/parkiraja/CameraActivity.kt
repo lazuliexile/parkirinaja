@@ -1,5 +1,6 @@
 package com.example.parkiraja
 
+import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,7 @@ import com.budiyev.android.codescanner.DecodeCallback
 import com.budiyev.android.codescanner.ErrorCallback
 import com.budiyev.android.codescanner.ScanMode
 import com.example.parkiraja.databinding.ActivityCameraBinding
+import com.google.android.gms.maps.SupportMapFragment
 
 class CameraActivity : AppCompatActivity() {
 
@@ -20,11 +22,14 @@ class CameraActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         binding = ActivityCameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         codeScanner()
         setPermission()
+
+
 
     }
 
@@ -66,8 +71,9 @@ class CameraActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        codeScanner.startPreview()
+        codeScanner.stopPreview()
     }
+
 
     private fun setPermission() {
         val permission = ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA)
