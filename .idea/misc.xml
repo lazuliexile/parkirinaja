@@ -17,9 +17,11 @@
         <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_main.xml" value="0.10885416666666667" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_maps.xml" value="0.10885416666666667" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_pilihtempatparkir.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_register.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_reset_password.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_splash_screen2.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_tempat_parkir.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/fragment_faq.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/fragment_home.xml" value="0.264" />
@@ -38,7 +40,6 @@
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_pilihtempatparkir.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_register.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_splash_screen2.xml" value="0.14130434782608695" />
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/activity_tempat_parkir.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/fragment_faq.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/fragment_scan.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/parkirinaja/app/src/main/res/layout/fragment_user.xml" value="0.14130434782608695" />
