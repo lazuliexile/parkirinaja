@@ -20,7 +20,11 @@
         android:theme="@style/Theme.ParkirAja"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".TempatParkirActivity"
+=======
+            android:name=".ResetPasswordActivity"
+>>>>>>> b34f7d73a13b890db218b126e1816d72b8e60909
             android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
